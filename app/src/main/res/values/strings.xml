@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LocationFinderApp</string>
+    <string name="rushi_s_location_finder">Rushi\'s Location Finder</string>
+    <string name="search">Search</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="entrys">Entrys</string>
+    <string name="locating">Locating...</string>
+</resources>

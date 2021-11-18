@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Enter New Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/rushi_s_location_finder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/searchaddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/searchaddress"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/search"
+        app:layout_constraintEnd_toStartOf="@+id/test"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchaddress" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="128dp"
+        android:text="@string/insert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <Button
+        android:id="@+id/Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="128dp"
+        android:text="@string/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Delete"
+        app:layout_constraintStart_toEndOf="@+id/Insert"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="128dp"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Update"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/entrys"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Search"
+        app:layout_constraintTop_toBottomOf="@+id/searchaddress" />
+
+    <TextView
+        android:id="@+id/Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/locating"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search"
+        app:layout_constraintVertical_bias="0.187" />
+</androidx.constraintlayout.widget.ConstraintLayout>
